@@ -75,7 +75,6 @@ public class MyHashMap<K, V> {
         Map m = new HashMap();
         m.put("Yo", "Ram Ram");
         m.remove("Yo");
-
     }
 
 }

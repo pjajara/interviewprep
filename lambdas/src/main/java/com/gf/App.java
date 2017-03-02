@@ -11,5 +11,11 @@ public class App
         float amount = 0.1f;
 
         System.out.println(amount);
+
+        StringBuilder sb = new StringBuilder("abcd");
+        sb.toString();
+        String reversed = sb.reverse().toString();
+        System.out.println(reversed);
+        System.out.println(sb.toString());
     }
 }

@@ -23,7 +23,7 @@ public class SimpleQueue implements Queue {
     public void enqueue(Object item){
 
         if (size == array.length){
-            throw new IllegalStateException("Cannot add to full queue");
+            throw new IllegalStateException("Cannot addR to full queue");
         }
 
         array[tail] = item;

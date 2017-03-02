@@ -52,7 +52,7 @@ public class Tree
     {
         if(root == null) return;
         
-        Queue<Node> stk = new LinkedList<Node>();
+        Queue<Node> stk = new LinkedList<>();
         stk.add(root);
         boolean more = true;
         while(more && stk.size() > 0)

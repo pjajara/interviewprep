@@ -5,6 +5,22 @@ import java.util.Map;
 
 public class StringUtils {
 
+    //Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+    public static int firstNonRepeatingCharIndex(String str) {
+
+        if (str == null) {
+            return -1;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (str.indexOf(ch) == str.lastIndexOf(ch)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public static String reverseWords(String str) {
         if (str == null) {
             return null;
@@ -47,7 +63,7 @@ public class StringUtils {
             }
         }
         /*
-		for (Map.Entry entry: map.entrySet()){
+        for (Map.Entry entry: map.entrySet()){
 			System.out.println("Character:" + entry.getKey() + ", count:" + entry.getValue() );
 		}*/
 
@@ -176,7 +192,7 @@ public class StringUtils {
 
     public static void main(String[] args) {
         // charRepitionCount("The blue lazy foxxxxx jump over the crazy huddle");
-		/*System.out.println(isRotation("Pawankumar","kumarPawan"));
+        /*System.out.println(isRotation("Pawankumar","kumarPawan"));
 		System.out.println(isRotation("Pawankumar","kuman"));
 		System.out.println(isRotation("Pawankumar",null));
 		frontTimes("Hello World",2);
@@ -187,8 +203,10 @@ public class StringUtils {
         //System.out.println(reverseString("Pawankumar Jajara"));
         // System.out.println(reverseString("Pawankumar Jajara"));
 
-       //  char[] charArray = new char[]{'A', 'B', 'C', 'D', 'E', 'F'};
-       // reverseInPlace(charArray);
+        //  char[] charArray = new char[]{'A', 'B', 'C', 'D', 'E', 'F'};
+        // reverseInPlace(charArray);
+
+        System.out.println(firstNonRepeatingCharIndex("aabbccddeeffghi"));
     }
 
 }

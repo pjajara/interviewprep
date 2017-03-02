@@ -19,7 +19,7 @@ public class FindLocation
    
    public static int[] findLocations(String s, String t)
    {
-      List<Integer> a = new ArrayList<Integer>();
+      List<Integer> a = new ArrayList<>();
       a = findLocationsHelper(a, s, t, 0);
       int[] pos = new int[a.size()];
       for(int i = 0; i < a.size(); i++)

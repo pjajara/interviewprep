@@ -5,11 +5,11 @@ public class MinHeap {
 
 	public MinHeap() {
 		elements = new ArrayList<Comparable>();
-		elements.add(null);
+		elements.addR(null);
 	}
 
-	public void add(Comparable newElement) {
-		elements.add(null);
+	public void addR(Comparable newElement) {
+		elements.addR(null);
 		int index = elements.size() - 1;
 
 		while (index > 1 && getParent(index).compareTo(newElement) > 0) {

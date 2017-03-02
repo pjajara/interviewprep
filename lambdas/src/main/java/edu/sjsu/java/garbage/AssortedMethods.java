@@ -991,7 +991,7 @@ public class AssortedMethods {
 			"planning",
 			"supply",
 			"systems",
-			"add",
+			"addR",
 			"chief",
 			"officer",
 			"Soviet",

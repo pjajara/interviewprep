@@ -16,9 +16,9 @@ public final class IntStack {
         size = 15;
     }
 
-    public IntStack(int size) {
-        arr = new int[size];
-        this.size = size;
+    public IntStack(int capacity) {
+        arr = new int[capacity];
+        this.size = capacity;
     }
 
     public void push(int data) {

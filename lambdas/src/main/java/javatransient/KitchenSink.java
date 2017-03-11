@@ -8,8 +8,12 @@ public class KitchenSink {
     Integer i;
 
     public static void main(String args[]) {
-        myMethod();
+        // myMethod();
         String[] strings = {"A", "B"};
+
+        String string = "samplestring";
+
+        string.chars().forEach(c -> processCharacter((char)c));
     }
 
     public static void myMethod() {
@@ -18,5 +22,10 @@ public class KitchenSink {
         } finally {
             System.out.println("I know what shit happened!");
         }
+    }
+
+    public static void processCharacter(char c){
+        System.out.println("c");
+        System.out.print(c);
     }
 }

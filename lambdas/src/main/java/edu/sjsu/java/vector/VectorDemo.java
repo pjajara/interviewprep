@@ -8,6 +8,7 @@ public class VectorDemo {
 	public static void main(String[] args) {
 
 		List<Integer> list = new Vector<>();
+
 		list.add(111);
 		list.add(222);
 		list.add(402);

@@ -65,11 +65,7 @@ public class Delete1 {
 
     public static void pythagoreanTriplets(int[] arr){
 
-        if (arr == null){
-            return;
-        }
-
-        if (arr.length < 3){
+        if (arr == null || arr.length < 3){
             return;
         }
 

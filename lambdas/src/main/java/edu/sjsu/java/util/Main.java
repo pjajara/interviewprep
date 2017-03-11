@@ -22,8 +22,8 @@ public class Main {
         map.put("a", "1");
         System.out.println(map.get("a"));
 
-        map.replace("a", "2");
-        System.out.println(map.get("a"));
+        map.replace("b", "2");
+        System.out.println(map.get("b"));
 
 
         for (Map.Entry entry : map.entrySet()) {
